@@ -70,9 +70,9 @@ for(var i = 0 ; i < questions.length ;i++){
     var CurrentQuestion = questions[i];
     play(CurrentQuestion.question , CurrentQuestion.options, CurrentQuestion.answer);
   }
-  
+
   //FINAL question
-  if(score < 5 ){
+  if(score < 5  ){
     console.log(chalk.yellowBright.bold("You are not Eligible to sit on the IRON THRONE"));
   }
   else{
@@ -86,14 +86,13 @@ for(var i = 0 ; i < questions.length ;i++){
       console.log(chalk.cyan.bold("You have Lost the Battle"));
     }
   }
-  
-  
+    
   //highScores
   if( score > highScores[1].score ){
       highScores[1].name = userName;
       highScores[1].score = score;
     }
-  
+
     
       console.log(chalk.greenBright("TopScores"));
       console.log(chalk.yellowBright("kshitiz Vaya - 6"));
